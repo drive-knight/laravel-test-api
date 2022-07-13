@@ -35,4 +35,10 @@ class Salon extends Model
 		'city_id',
 		'status'
 	];
+
+    protected $hidden = [
+        'status',
+        'created_at',
+        'updated_at',
+    ];
 }

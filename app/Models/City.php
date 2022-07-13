@@ -32,4 +32,5 @@ class City extends Model
 		'name',
 		'status'
 	];
+
 }
