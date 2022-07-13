@@ -19,7 +19,7 @@ class SalonController extends Controller
     {
         try {
             $salon = Salon::create([
-                'name' => $request->validated('name'),
+                'name' => $request->validated(),
                 'city_id' => $cityId,
                 'status' => 1
             ]);

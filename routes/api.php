@@ -25,7 +25,7 @@ Route::get('/city/{cityId}/salon', [SalonController::class, 'getSalons']);
 Route::post('/city/{cityId}/salon', [SalonController::class, 'createSalon']);
 Route::put('/city/{cityId}/salon/{salonId}', [SalonController::class, 'updateSalon']);
 Route::delete('/city/{cityId}/salon/{salonId}', [SalonController::class, 'deleteSalon']);
-
+s
 Route::get('/salon/city-salon-name', function () {
     $res = DB::select('select
         CONCAT(c.name, " ", s.name) as city_salon_name

@@ -40,5 +40,6 @@ class Salon extends Model
         'status',
         'created_at',
         'updated_at',
+        'city_id'
     ];
 }
