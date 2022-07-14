@@ -69,7 +69,7 @@ class SalonController extends Controller
         $salon = Salon::findOrFail($salonId);
         if ($city->id == $salon->city_id and $salon->status == 1) {
             $salon->update([
-                'name' => $request->validated('name'),
+                'name' => $request->validated(),
                 'city_id' => $cityId,
                 'status' => 1
             ]);
