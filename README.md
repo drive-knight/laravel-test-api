@@ -7,33 +7,27 @@ __Требования:__
 ## api paths  
   
  ### /api/city/{city_id}/salon  
- **Разрешенные методы:** GET  
- **Параметры**:  
- "Обязательные": 	{"city_id": int}  
+ **Разрешенные методы:** GET   
  *Получить список салонов в городе* 
  
  ### /api/city/{city_id}/salon 
  **Разрешенные методы:** POST  
  **Параметры**:  
- "Обязательные": 	{"city_id": int, "name: "varchar255"}  
+ "Обязательные": 	{"name: "varchar255"}  
  *Создать салон в городе*  
  
  ### /api/city/{city_id}/salon/{salon_id}  
  **Разрешенные методы:** GET  
- **Параметры**:  
- "Обязательные": 	{"city_id": int, "salon_id": int}  
  *Получить информацию по салону*  
  
  ### /api/city/{city_id}/salon/{salon_id}  
  **Разрешенные методы:** PUT/PATCH  
  **Параметры**:  
- "Обязательные":	{"city_id": int, "salon_id": int, "name: "varchar255"}  
+ "Обязательные":	{"name: "varchar255"}  
  *Изменить салон в городе*  
 
  ### /api/city/{city_id}/salon/{salon_id}  
  **Разрешенные методы:** DELETE  
- **Параметры**:  
- "Обязательные": 	{"city_id": int, "salon_id": int}  
  *Удалить салон в городе*  
  
  ## api custom paths  
